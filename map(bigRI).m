@@ -17,3 +17,4 @@ mlabel off
 gridm off
 geoshow(states, 'FaceColor','#EDEDED')
 geoshow(ri, 'FaceColor', '#90EE90')
+%https://www.mathworks.com/help/map/inset-maps.html where got code from, changed to show RI
