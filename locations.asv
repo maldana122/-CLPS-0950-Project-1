@@ -2,44 +2,50 @@
 
 %Landmarks
 latNelson=41.83;
-lonNelson=71.3980;
+lonNelson=-71.3980;
 
-lonRatty=41.8252;
-latRatty=71.4012;
+latRatty=41.8252;
+lonRatty=-71.4012;
 
-lonScili=41.8270;
-latScili=71.4002;
+latScili=41.8270;
+lonScili=-71.4002;
 
-lonRock=41.8257;
-latRock=71.4051;
+latRock=41.8257;
+lonRock=-71.4051;
 
-lonAndrews=41.8306;
-latAndrews=71.4024;
+latAndrews=41.8306;
+lonAndrews=-71.4024;
 
 %Ice-cream places
-lonTri=41.8187;
-latTri=71.4247;
+latTri=41.8187;
+lonTri=-71.4247;
 
-lonHelado=41.8243;
-latHelado=71.4249;
+latHelado=41.8243;
+lonHelado=-71.4249;
 
-lonBenJ=41.8229;
-latBenJ=71.4008;
+latBenJ=41.8229;
+lonBenJ=-71.4008;
 
-lonUdder=41.8229;
-latUdder=71.3924;
+latUdder=41.8229;
+lonUdder=-71.3924;
 
-lonKow=41.8214;
-latKow=71.3922;
+latKow=41.8214;
+lonKow=-71.3922;
 
-lonInsomnia=41.8304;
-latInsomnia=71.4008;
+latInsomnia=41.8304;
+lonInsomnia=-71.4008;
 
-lonSacred=41.82303;
-latSacred=71.37914;
+latSacred=41.82303;
+lonSacred=-71.37914;
 
-lonDairyQ=41.8292;
-latDairyQ=71.4168;
+latDairyQ=41.8292;
+lonDairyQ=-71.4168;
 
-geoplot([latNelson latKow], [l])
+%example- to show plot does work
+%need to make for loop to insert whatever answer is behind and want to
+%change the colors of start and end and maybe add text saying start and
+%finish
+geoplot([latNelson latKow], [lonNelson lonKow], '-*')
+geolimits([41.7 41.9],[-71.425 -71.3291])
+geobasemap streets
 
