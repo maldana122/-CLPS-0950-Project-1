@@ -49,3 +49,4 @@ geoplot([latNelson latKow], [lonNelson lonKow], '-*')
 geolimits([41.7 41.9],[-71.425 -71.3291])
 geobasemap streets
 
+%https://www.mathworks.com/help/matlab/creating_plots/plot-in-geographic-coordinates.html got geographic code from here, but inserted own coordinates and adjusted axis
