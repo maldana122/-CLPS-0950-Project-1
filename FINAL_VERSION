@@ -1,5 +1,5 @@
 questions = containers.Map;
-questions('1')= ['1. Which movie genre do you enjoy more? \n\n' ...
+questions('1')= ['Type the answer choice as a single capital letter 1. Which movie genre do you enjoy more? \n\n' ...
     'A.Science-fiction \n\n' ...
     'B. Romantic Comedies \n\n' ...
     'C.Have no preference as long as you watch it with others \n\n' ...
@@ -8,7 +8,7 @@ questions('1')= ['1. Which movie genre do you enjoy more? \n\n' ...
     'A. Staying at home and watching a movie, you do not want to waste money on unnecessary things \n\n' ...
     'B. Going on a tinder date \n\n' ...
     'C. Competing in a race or darts competition, anything as long as you can win! \n\n' ...
-    'D.Volunteering at a shelter or helping others \n\n']; 
+    'D. Volunteering at a shelter or helping others \n\n']; 
  questions('3')= ['3. What is your ideal vacation? \n\n' ...
     'A. Spending a week not leaving your bed \n\n' ...
     'B.Spending a week partying \n\n' ...
@@ -33,7 +33,7 @@ questions('1')= ['1. Which movie genre do you enjoy more? \n\n' ...
     'A. You decline the offer. You dont like being in the spotlight and are happy with your job now \n\n' ...
     'B. Youve already called the president and have big plans for the project \n\n' ...
     'C. You have assembled a team and are gathering ideas from everyone \n\n'];
- questions('8')= ['8. You fing yourelf lost in the woods, how do you proceed? \n\n' ...
+ questions('8')= ['8. You find yourself lost in the woods, how do you proceed? \n\n' ...
     'A. Youve practiced this before and are ready with your compass at the ready \n\n' ...
     'B. You are helping the others remain calm and showing your support \n\n' ...
     'C. Youve picked a direction and are going for it, theres no going back now \n\n'];
@@ -55,87 +55,87 @@ for i=1:N
     fprintf(questions(string(i)), '%s'); 
     test_answer = input (prompt, 's');
     if i == 1
-        if test_answer =='A'
+        if test_answer =='A'|'A.'|'a'|'a.'
             strawberry_score = strawberry_score +1;
-        elseif test_answer == 'B'
+        elseif test_answer == 'B'|'B.'|'b'|'b.'
             chocolate_score = chocolate_score +1;
-        elseif test_answer == 'C'
+        elseif test_answer == 'C'|'C.'|'c'|'c.'
             vanilla_score = vanilla_score +1;
-        elseif test_answer == 'D'
+        elseif test_answer == 'D'|'D.'|'d'|'d.'
             cccd_score = cccd_score+1;
         end
      end
      if i == 2
-        if test_answer == 'A'
+        if test_answer == 'A'|'A.'|'a'|'a.'
             mintcc_score = mintcc_score +1;
-        elseif test_answer == 'B'
+        elseif test_answer == 'B'|'B.'|'b'|'b.'
             chocolate_score = chocolate_score +1;
-        elseif test_answer == 'C'
+        elseif test_answer == 'C'|'C.'|'c'|'c.'
             cccd_score = cccd_score +1;
-        elseif test_answer == 'D'
+        elseif test_answer == 'D'|'D.'|'d'|'d.'
             jamoca_score = jamoca_score+1;
         end
      end 
      if i == 3
-        if test_answer == 'A'
+        if test_answer == 'A'|'A.'|'a'|'a.'
             strawberry_score = strawberry_score +1;
-        elseif test_answer == 'B'
+        elseif test_answer == 'B'|'B.'|'b'|'b.'
             vanilla_score = vanilla_score +1;
-        elseif test_answer == 'C'
+        elseif test_answer == 'C'|'C.'|'c'|'c.'
             chocolate_score = chocolate_score +1;
-        elseif test_answer == 'D'
+        elseif test_answer == 'D'|'D.'|'d'|'d.'
             mintcc_score= mintcc_score+1;
         end
      end 
      if i == 4
-        if test_answer== 'A'
+        if test_answer== 'A'|'A.'|'a'|'a.'
             rockyroad_score = rockyroad_score +1;
-        elseif test_answer== 'B'
+        elseif test_answer== 'B'|'B.'|'b'|'b.'
             jamoca_score = jamoca_score +1;
-        elseif test_answer == 'C'
+        elseif test_answer == 'C'|'C.'|'c'|'c.'
             chocolatechip_score = chocolatechip_score +1;
-        elseif test_answer == 'D'
+        elseif test_answer == 'D'|'D.'|'d'|'d.'
             rainbowsherbet_score= rainbowsherbet_score+1;
         end
      end 
      if i == 5
-        if test_answer== 'A'
+        if test_answer== 'A'|'A.'|'a'|'a.'
             jamoca_score = jamoca_score +1;
-        elseif test_answer == 'B'
+        elseif test_answer == 'B'|'B.'|'b'|'b.'
             chocolatechip_score = chocolatechip_score +1;
-        elseif test_answer == 'C'
+        elseif test_answer == 'C'|'C.'|'c'|'c.'
             mintcc_score = mintcc_score +1;
-        elseif test_answer == 'D'
+        elseif test_answer == 'D'|'D.'|'d'|'d.'
             vanilla_score = vanilla_score+1;
         end
      end 
      if i == 6
-        if test_answer == 'A'
+        if test_answer == 'A'|'A.'|'a'|'a.'
             strawberry_score = strawberry_score +1;
-        elseif test_answer == 'B'
+        elseif test_answer == 'B'|'B.'|'b'|'b.'
             rainbowsherbet_score = rainbowsherbet_score +1;
-        elseif test_answer == 'C'
+        elseif test_answer == 'C'|'C.'|'c'|'c.'
             pralines_score = pralines_score +1;
-        elseif test_answer == 'D'
+        elseif test_answer == 'D'|'D.'|'d'|'d.'
             rockyroad_score= rockyroad_score+1;
         end
      end 
      if i == 7
-        if test_answer == 'A'
+        if test_answer == 'A'|'A.'|'a'|'a.'
             pralines_score = pralines_score +1;
-        elseif test_answer == 'B'
+        elseif test_answer == 'B'|'B.'|'b'|'b.'
             cccd_score = cccd_score +1;
-        elseif test_answer == 'C'
+        elseif test_answer == 'C'|'C.'|'c'|'c.'
             rockyroad_score = rockyroad_score +1;
         end
      end 
      if i == 8
-        if test_answer == 'A'
+        if test_answer == 'A'|'A.'|'a'|'a.'
             chocolatechip_score = chocolatechip_score +1;
-        elseif test_answer == 'B'
+        elseif test_answer == 'B'|'B.'|'b'|'b.'
             pralines_score = pralines_score +1;
-        elseif test_answer == 'C'
-            sherbet_score = sherbet_score +1;
+        elseif test_answer == 'C'|'C.'|'c'|'c.'
+            rainbowsherbet_score = rainbowsherbet_score +1;
         end
      end 
 end
@@ -316,12 +316,12 @@ location_choices = containers.Map;
 location_choices('Nelson Fitness Center') = [41.83,-71.3980];
 location_choices('The Ratty')= [41.8252, -71.4012]; 
 location_choices('The Sci-Li')= [41.82720, -71.4002];
-location_choices('The Rock')= [41.8257, -71.4051];
+location_choices('The Rock Library')= [41.8257, -71.4051];
 location_choices('Andrews Dining Hall')= [41.8306, -71.4024];
 
-temp = location_choices(opts(choice));
-latchoice = temp(1) 
-lonchoice = temp(2)
+temp=location_choices(opts(choice));
+latchoice=temp(1) 
+lonchoice=temp(2)
 
 %Nelson
 latNelson=41.83;
@@ -349,7 +349,7 @@ lonAndrews=-71.4024;
 
 
 msg= "Select the Ice Cream flavor that was assigned to you in the previous part ";
-opts=["Strawberry Ice Cream" "Chocolate Ice Cream" "Mint Chocolate Chip" "Chocolate Chip Cookie Dough" "Jamoca" "Pralines" "Strawberry Ice Cream" "Rainbow Sherbert"];
+opts=["Strawberry Ice Cream" "Chocolate Ice Cream" "Vanilla Ice Cream" "Mint Chocolate Chip" "Chocolate Chip Cookie Dough" "Rocky Road" "Jamoca" "Pralines" "Rainbow Sherbert"];
 choice=menu(msg,opts);
 disp("You chose" + opts(choice))
 
@@ -425,5 +425,3 @@ text(latend,lonend, 'End',...
     'HorizontalAlignment','right',...
     'VerticalAlignment','bottom');
 %https://www.mathworks.com/help/matlab/creating_plots/plot-in-geographic-coordinates.html got geographic code from here, but inserted own coordinates and adjusted axis
-
-
