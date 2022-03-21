@@ -1,0 +1,429 @@
+questions = containers.Map;
+questions('1')= ['1. Which movie genre do you enjoy more? \n\n' ...
+    'A.Science-fiction \n\n' ...
+    'B. Romantic Comedies \n\n' ...
+    'C.Have no preference as long as you watch it with others \n\n' ...
+    'D. A reality tv show about people surviving in the wild \n\n '];
+ questions('2')= ['2. What is your ideal Saturday night?\n\n' ...
+    'A. Staying at home and watching a movie, you do not want to waste money on unnecessary things \n\n' ...
+    'B. Going on a tinder date \n\n' ...
+    'C. Competing in a race or darts competition, anything as long as you can win! \n\n' ...
+    'D.Volunteering at a shelter or helping others \n\n']; 
+ questions('3')= ['3. What is your ideal vacation? \n\n' ...
+    'A. Spending a week not leaving your bed \n\n' ...
+    'B.Spending a week partying \n\n' ...
+    'C. Spending a week ziplining through the jungle \n\n' ...
+    'D.Somewhere safe, no wild animals! \n\n'];
+ questions('4')= ['4. What would people describe as being your best quality? \n\n' ...
+    'A. Your patience and listening skills \n\n' ...
+    'B. Your morals \n\n' ...
+    'C. Your generosity \n\n' ...
+    'D.Your decisiveness \n\n'];
+ questions('5')= ['5. You found a $100 bill on the ground, what would you do with the money? \n\n' ...
+    'A. Turn it into the police, its not your money and its the right thing to do \n\n' ...
+    'B. You donate it, you want to give it to someone in need \n\n' ...
+    'C. You leave it on the ground, youre not sure if anyone would see you pick it up \n\n' ...
+    'D. Your knee-jerk reaction is to pocket it and spend it on the first thing you see \n\n'];
+ questions('6')= ['6. When doing a 1,000 piece puzzle how do you start? \n\n' ...
+    'A. You arent too sure, but you know once you start youll sit there until you finish \n\n' ...
+    'B. Seperate by colors \n\n' ...
+    'C. Go along with someone elses idea, you dont want to be in the spotlight \n\n' ...
+    'D. Listen to anothers ideas and weigh the benefit of each option \n\n'];
+ questions('7')= ['7. Your boss asks you to plan a new project and if successful youll get a raise. How do you react? \n\n' ...
+    'A. You decline the offer. You dont like being in the spotlight and are happy with your job now \n\n' ...
+    'B. Youve already called the president and have big plans for the project \n\n' ...
+    'C. You have assembled a team and are gathering ideas from everyone \n\n'];
+ questions('8')= ['8. You fing yourelf lost in the woods, how do you proceed? \n\n' ...
+    'A. Youve practiced this before and are ready with your compass at the ready \n\n' ...
+    'B. You are helping the others remain calm and showing your support \n\n' ...
+    'C. Youve picked a direction and are going for it, theres no going back now \n\n'];
+
+ N=8; %for while loop so that the questions are shown from 1st to last
+%varibales to add the scores for each question
+strawberry_score=0;
+chocolate_score=0;
+vanilla_score=0;
+cccd_score=0; %chocolate chip cookie dough score
+mintcc_score=0;
+jamoca_score=0;
+rockyroad_score=0;
+chocolatechip_score=0;
+rainbowsherbet_score=0;
+pralines_score=0;
+prompt = 'Answer: ';
+for i=1:N
+    fprintf(questions(string(i)), '%s'); 
+    test_answer = input (prompt, 's');
+    if i == 1
+        if test_answer =='A'
+            strawberry_score = strawberry_score +1;
+        elseif test_answer == 'B'
+            chocolate_score = chocolate_score +1;
+        elseif test_answer == 'C'
+            vanilla_score = vanilla_score +1;
+        elseif test_answer == 'D'
+            cccd_score = cccd_score+1;
+        end
+     end
+     if i == 2
+        if test_answer == 'A'
+            mintcc_score = mintcc_score +1;
+        elseif test_answer == 'B'
+            chocolate_score = chocolate_score +1;
+        elseif test_answer == 'C'
+            cccd_score = cccd_score +1;
+        elseif test_answer == 'D'
+            jamoca_score = jamoca_score+1;
+        end
+     end 
+     if i == 3
+        if test_answer == 'A'
+            strawberry_score = strawberry_score +1;
+        elseif test_answer == 'B'
+            vanilla_score = vanilla_score +1;
+        elseif test_answer == 'C'
+            chocolate_score = chocolate_score +1;
+        elseif test_answer == 'D'
+            mintcc_score= mintcc_score+1;
+        end
+     end 
+     if i == 4
+        if test_answer== 'A'
+            rockyroad_score = rockyroad_score +1;
+        elseif test_answer== 'B'
+            jamoca_score = jamoca_score +1;
+        elseif test_answer == 'C'
+            chocolatechip_score = chocolatechip_score +1;
+        elseif test_answer == 'D'
+            rainbowsherbet_score= rainbowsherbet_score+1;
+        end
+     end 
+     if i == 5
+        if test_answer== 'A'
+            jamoca_score = jamoca_score +1;
+        elseif test_answer == 'B'
+            chocolatechip_score = chocolatechip_score +1;
+        elseif test_answer == 'C'
+            mintcc_score = mintcc_score +1;
+        elseif test_answer == 'D'
+            vanilla_score = vanilla_score+1;
+        end
+     end 
+     if i == 6
+        if test_answer == 'A'
+            strawberry_score = strawberry_score +1;
+        elseif test_answer == 'B'
+            rainbowsherbet_score = rainbowsherbet_score +1;
+        elseif test_answer == 'C'
+            pralines_score = pralines_score +1;
+        elseif test_answer == 'D'
+            rockyroad_score= rockyroad_score+1;
+        end
+     end 
+     if i == 7
+        if test_answer == 'A'
+            pralines_score = pralines_score +1;
+        elseif test_answer == 'B'
+            cccd_score = cccd_score +1;
+        elseif test_answer == 'C'
+            rockyroad_score = rockyroad_score +1;
+        end
+     end 
+     if i == 8
+        if test_answer == 'A'
+            chocolatechip_score = chocolatechip_score +1;
+        elseif test_answer == 'B'
+            pralines_score = pralines_score +1;
+        elseif test_answer == 'C'
+            sherbet_score = sherbet_score +1;
+        end
+     end 
+end
+url_strawberry = 'https://www.thespruceeats.com/thmb/ohA1g_dWi_Wxn7IqU-oHGsKqpS8=/3000x1687/smart/filters:no_upscale()/strawberry-ice-cream-10-0b3e120e7d6f4df1be3c57c17699eb2c.jpg';
+img_strawberry = webread(url_strawberry);
+
+url_chocolate = 'https://joyfoodsunshine.com/wp-content/uploads/2020/06/homemade-chocolate-ice-cream-recipe-7.jpg';
+img_chocolate = webread(url_chocolate);
+
+url_vanilla = 'https://thebusybaker.ca/wp-content/uploads/2019/05/best-ever-no-churn-vanilla-ice-cream-fb-ig-2.jpg';
+img_vanilla = webread(url_vanilla);
+
+url_cccd = 'https://celebratingsweets.com/wp-content/uploads/2014/04/Cookie-Dough-Ice-Cream-1-5.jpg';
+img_cccd = webread(url_cccd);
+
+url_mintcc = 'https://www.chewoutloud.com/wp-content/uploads/2020/04/Mint-Chip-Ice-Cream-Vertical-683x1024.jpg';
+img_mintcc = webread(url_mintcc);
+
+url_jamoca = 'https://alldayidreamaboutfood.com/wp-content/uploads/2012/07/Keto-Jamoca-Almond-Fudge-500x500.jpg';
+img_jamoca = webread(url_jamoca);
+
+url_rockyroad = 'https://www.browneyedbaker.com/wp-content/uploads/2021/05/rocky-road-ice-cream-13-square.jpg';
+img_rockyroad = webread(url_rockyroad);
+
+url_chocolatechip = 'https://www.thespruceeats.com/thmb/E_OtkpNCmnK_8Rm5MFVr9xW0kcg=/3936x2624/filters:fill(auto,1)/chocolate-chip-ice-cream-stracciatella-4051257-hero-01-9e6e120c10d2430cbbbcfee7d76a5011.jpg';
+img_chocolatechip = webread(url_chocolatechip);
+
+url_rainbowsherbet = 'https://cdn.shopify.com/s/files/1/1143/3886/products/rainbow-sherbert_f037146b-53a9-467e-8e95-e78b0a7896f0.jpg?v=1522430023';
+img_rainbowsherbet = webread(url_rainbowsherbet);
+
+url_pralines = 'https://www.killingthyme.net/wp-content/uploads/2015/03/pralines-and-cream-ice-cream1.jpg';
+img_pralines = webread(url_pralines);
+
+  
+allVals = [strawberry_score; chocolate_score; vanilla_score; cccd_score; mintcc_score; jamoca_score; rockyroad_score; chocolatechip_score; rainbowsherbet_score; pralines_score];
+maxVal = max(allVals);
+winners = find(allVals == maxVal);
+length_win = length(winners);
+
+
+if length_win > 1
+    A=1;
+    B=2;
+    C=3;
+    D=4;
+    E=5;
+    F=6;
+    G=7;
+    H=8;
+    I=9;
+    J=10;
+    
+    tie_break = ["A. Offending someone","B. Becoming boring","C. Having your instincts be wrong","D. Losing","E. Getting caught outside of your comfort zone","F.Being morally wrong","G. Your friends disliking you","H. Feeling incomptetent","I. Realizing you were wrong to trust someone","J. Emberassing yourselfin front of others"];
+    disp('Tiebreaker Question: What is your greatest fear?');
+    disp(tie_break(winners));
+    prompt = 'Answer ';
+    answer_tie = input(prompt);
+        
+        if answer_tie == 1
+            output = 'Strawberry!!!';
+            output_img = 1;
+        elseif answer_tie == 2
+            output = 'Chocolate!!!';
+            output_img = 2;
+        elseif answer_tie == 3
+            output = 'Vanilla!!!';
+            output_img = 3;
+        elseif answer_tie == 4
+            output = 'Chocolate Chip Cookie Dough!!!';
+            output_img = 4;
+        elseif answer_tie == 5
+            output = 'Mint Chocolate Chip!!!';
+            output_img = 5;
+        elseif answer_tie == 6
+            output = 'Jamoca!!!';
+            output_img = 6;
+        elseif answer_tie == 7
+            output = 'Rocky Road!!!';
+            output_img = 7;
+        elseif answer_tie == 8
+            output = 'Chocolate Chip!!!';
+            output_img = 8;
+        elseif answer_tie == 9
+            output = 'Rainbow Sherbet!!!';
+            output_img = 9;
+        elseif answer_tie == 10
+            output = 'Pralines n Cream!!!';
+            output_img = 10;
+        end
+        
+elseif winners == 1
+    output = 'Strawberry!!!';
+    output_img = 1;
+elseif winners == 2
+    output = 'Chocolate!!!';
+    output_img = 2;
+elseif winners == 3
+    output = 'Vanilla!!!';
+    output_img = 3;
+elseif winners == 4
+    output = 'Chocolate Chip Cookie Dough!!!';
+    output_img = 4;
+elseif winners == 5
+    output = 'Mint Chocolate Chip!!!';
+    output_img = 5;
+elseif winners == 6
+    output = 'Jamoca!!!';
+    output_img = 6;
+elseif winners == 7
+    output = 'Rocky Road!!!';
+    output_img = 7;
+elseif winners == 8
+    output = 'Chocolate Chip!!!';
+    output_img = 8;
+elseif winners == 9
+    output = 'Rainbow Sherbet!!!';
+    output_img = 9;
+elseif winners == 10
+    output = 'Pralines n Cream!!!';   
+    output_img = 10;
+end
+
+
+disp('Based on our quiz, the icecream flavor that best matches your personality is:');
+disp(output);
+if output_img == 1
+    imagesc(img_strawberry)
+    axis image;
+    axis off;
+elseif output_img == 2
+    imagesc(img_chocolate)
+    axis image;
+    axis off;
+elseif output_img == 3
+    imagesc(img_vanilla)
+    axis image;
+    axis off;
+elseif output_img == 4
+    imagesc(img_cccd)
+    axis image;
+    axis off
+elseif output_img == 5
+    imagesc(img_mintcc)
+    axis image;
+    axis off;
+elseif output_img == 6
+    imagesc(img_jamoca)
+    axis image;
+    axis off;
+elseif output_img == 7
+    imagesc(img_rockyroad)
+    axis image;
+    axis off;
+elseif output_img == 8
+    imagesc(img_chocolatechip)
+    axis image;
+    axis off;
+elseif output_img == 9
+    imagesc(img_rainbowsherbet)
+    axis image;
+    axis off;
+elseif output_img == 10
+    imagesc(img_pralines)
+    axis image;
+    axis off;
+end
+   
+
+%Need to make for loop to make these specific to the destination
+msg= "Choose the closest landmark to you ";
+opts=["Nelson Fitness Center" "The Ratty" "The Sci-li" "The Rock Library" "Andrews Dining Hall"];
+choice=menu(msg,opts);
+disp("You chose" + opts(choice))
+
+%Landmarks
+%Nelson
+location_choices = containers.Map;
+location_choices('Nelson Fitness Center') = [41.83,-71.3980];
+location_choices('The Ratty')= [41.8252, -71.4012]; 
+location_choices('The Sci-Li')= [41.82720, -71.4002];
+location_choices('The Rock')= [41.8257, -71.4051];
+location_choices('Andrews Dining Hall')= [41.8306, -71.4024];
+
+temp = location_choices(opts(choice));
+latchoice = temp(1) 
+lonchoice = temp(2)
+
+%Nelson
+latNelson=41.83;
+lonNelson=-71.3980;
+
+
+%Ratty
+latRatty=41.8252;
+lonRatty=-71.4012;
+
+
+%Sci-Li
+latScili=41.8270;
+lonScili=-71.4002;
+
+
+%The Rock
+latRock=41.8257;
+lonRock=-71.4051;
+
+
+%Andrews
+latAndrews=41.8306;
+lonAndrews=-71.4024;
+
+
+msg= "Select the Ice Cream flavor that was assigned to you in the previous part ";
+opts=["Strawberry Ice Cream" "Chocolate Ice Cream" "Mint Chocolate Chip" "Chocolate Chip Cookie Dough" "Jamoca" "Pralines" "Strawberry Ice Cream" "Rainbow Sherbert"];
+choice=menu(msg,opts);
+disp("You chose" + opts(choice))
+
+%Ice-cream places
+
+destination_choices = containers.Map;
+destination_choices('Strawberry Ice Cream') = [41.8187,-71.4247];
+destination_choices('Chocolate Ice Cream') = [41.8243,-71.4249];
+destination_choices('Vanilla Ice Cream') = [41.8229,-71.4008];
+destination_choices('Mint Chocolate Chip') = [41.8229,-71.3924];
+destination_choices('Chocolate Chip Cookie Dough') = [41.8214,-71.3922];
+destination_choices('Jamoca') = [41.8304,-71.4008];
+destination_choices('Rocky Road') = [41.8292,-71.4168];
+destination_choices('Chocolate Chip') = [41.8292,-71.4168];
+destination_choices('Rainbow Sherbert') = [41.8187,-71.4247];
+destination_choices('Pralines') = [41.82303,-71.37914];
+
+temp2 = destination_choices(opts(choice));
+latend = temp2(1); 
+lonend = temp2(2);
+
+%strawberry ice-cream
+latTri=41.8187;
+lonTri=-71.4247;
+
+%chocolate ice cream
+latHelado=41.8243;
+lonHelado=-71.4249;
+
+%Vanilla ice cream
+latBenJ=41.8229;
+lonBenJ=-71.4008;
+
+%mint cholocate chip
+latUdder=41.8229;
+lonUdder=-71.3924;
+
+%chocolate chip cookie dough
+latKow=41.8214;
+lonKow=-71.3922;
+
+%jamoca 
+latInsomnia=41.8304;
+lonInsomnia=-71.4008;
+
+
+%Rocky Road
+latDairyQ=41.8292;
+lonDairyQ=-71.4168;
+
+
+%Chocolate Chip
+latDairyQ=41.8292;
+lonDairyQ=-71.4168;
+
+%Rainbow Sherbet
+latTri=41.8187;
+lonTri=-71.4247;
+
+%Pralines
+latSacred=41.82303;
+lonSacred=-71.37914;
+
+
+%map display
+h1=geoplot([latchoice latend], [lonchoice lonend], '-p');
+set(h1,'color','m');
+%changing colors- https://www.mathworks.com/matlabcentral/answers/895167-how-can-i-change-the-line-colour-in-a-geoplot-based-on-data
+geolimits([41.7 41.9],[-71.425 -71.3291])
+geobasemap streets
+text(latchoice,lonchoice,'Start Here');
+text(latend,lonend, 'End',...
+    'HorizontalAlignment','right',...
+    'VerticalAlignment','bottom');
+%https://www.mathworks.com/help/matlab/creating_plots/plot-in-geographic-coordinates.html got geographic code from here, but inserted own coordinates and adjusted axis
+
+
