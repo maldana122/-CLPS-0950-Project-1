@@ -1,3 +1,8 @@
+%Written by Maria Iorini and proofed by Jack Holmes and Melissa Aldana
+%Estimated time to complete was 15 hours
+%Estimated time to debug was 5 hours
+%5 hours to proofread and integrate with other code
+
 questions = containers.Map;
 questions('1')= ['Type the answer choice as a single capital letter 1. Which movie genre do you enjoy more? \n\n' ...
     'A.Science-fiction \n\n' ...
@@ -139,6 +144,12 @@ for i=1:N
         end
      end 
 end
+
+%Written by Jack Holmes and proofed by Maria Iorini and Melissa Aldana
+%Estimated time to complete was 15 hours
+%Estimated time to debug was 5 hours
+%5 hours to proofread and integrate with other code
+
 url_strawberry = 'https://www.thespruceeats.com/thmb/ohA1g_dWi_Wxn7IqU-oHGsKqpS8=/3000x1687/smart/filters:no_upscale()/strawberry-ice-cream-10-0b3e120e7d6f4df1be3c57c17699eb2c.jpg';
 img_strawberry = webread(url_strawberry);
 
@@ -304,7 +315,11 @@ elseif output_img == 10
 end
    
 
-%Need to make for loop to make these specific to the destination
+%%Written by Melissa Aldana and proofed by Jack Holmes and Maria Iorini
+%Estimated time to complete was 15 hours
+%Estimated time to debug was 5 hours
+%5 hours to proofread and integrate with other code
+
 msg= "Choose the closest landmark to you ";
 opts=["Nelson Fitness Center" "The Ratty" "The Sci-li" "The Rock Library" "Andrews Dining Hall"];
 choice=menu(msg,opts);
