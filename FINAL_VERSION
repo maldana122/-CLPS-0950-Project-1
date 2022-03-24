@@ -61,90 +61,91 @@ for i=1:N
     opts=["A" "B" "C" "D" ];
     choice=menu(msg,opts);
     if i == 1
-        if test_answer =='A'|'A.'|'a'|'a.'
+        if opts == "A"
             strawberry_score = strawberry_score +1;
-        elseif test_answer == 'B'|'B.'|'b'|'b.'
+        elseif opts == "B"
             chocolate_score = chocolate_score +1;
-        elseif test_answer == 'C'|'C.'|'c'|'c.'
+        elseif opts == "C"
             vanilla_score = vanilla_score +1;
-        elseif test_answer == 'D'|'D.'|'d'|'d.'
+        elseif opts == 'D'
             cccd_score = cccd_score+1;
         end
      end
      if i == 2
-        if test_answer == 'A'|'A.'|'a'|'a.'
+        if opts == 'A'
             mintcc_score = mintcc_score +1;
-        elseif test_answer == 'B'|'B.'|'b'|'b.'
+        elseif opts == 'B'
             chocolate_score = chocolate_score +1;
-        elseif test_answer == 'C'|'C.'|'c'|'c.'
+        elseif opts == 'C'
             cccd_score = cccd_score +1;
-        elseif test_answer == 'D'|'D.'|'d'|'d.'
+        elseif opts == 'D'
             jamoca_score = jamoca_score+1;
         end
      end 
      if i == 3
-        if test_answer == 'A'|'A.'|'a'|'a.'
+        if opts == 'A'
             strawberry_score = strawberry_score +1;
-        elseif test_answer == 'B'|'B.'|'b'|'b.'
+        elseif opts == 'B'
             vanilla_score = vanilla_score +1;
-        elseif test_answer == 'C'|'C.'|'c'|'c.'
+        elseif opts == 'C'
             chocolate_score = chocolate_score +1;
-        elseif test_answer == 'D'|'D.'|'d'|'d.'
+        elseif opts == 'D'
             mintcc_score= mintcc_score+1;
         end
      end 
      if i == 4
-        if test_answer== 'A'|'A.'|'a'|'a.'
+        if opts== 'A'
             rockyroad_score = rockyroad_score +1;
-        elseif test_answer== 'B'|'B.'|'b'|'b.'
+        elseif opts== 'B'
             jamoca_score = jamoca_score +1;
-        elseif test_answer == 'C'|'C.'|'c'|'c.'
+        elseif opts == 'C'
             chocolatechip_score = chocolatechip_score +1;
-        elseif test_answer == 'D'|'D.'|'d'|'d.'
+        elseif opts == 'D'
             rainbowsherbet_score= rainbowsherbet_score+1;
         end
      end 
      if i == 5
-        if test_answer== 'A'|'A.'|'a'|'a.'
+        if opts == 'A'
             jamoca_score = jamoca_score +1;
-        elseif test_answer == 'B'|'B.'|'b'|'b.'
+        elseif opts == 'B'
             chocolatechip_score = chocolatechip_score +1;
-        elseif test_answer == 'C'|'C.'|'c'|'c.'
+        elseif opts == 'C'
             mintcc_score = mintcc_score +1;
-        elseif test_answer == 'D'|'D.'|'d'|'d.'
+        elseif opts == 'D'
             vanilla_score = vanilla_score+1;
         end
      end 
      if i == 6
-        if test_answer == 'A'|'A.'|'a'|'a.'
+        if opts == 'A'
             strawberry_score = strawberry_score +1;
-        elseif test_answer == 'B'|'B.'|'b'|'b.'
+        elseif opts == 'B'
             rainbowsherbet_score = rainbowsherbet_score +1;
-        elseif test_answer == 'C'|'C.'|'c'|'c.'
+        elseif opts == 'C'
             pralines_score = pralines_score +1;
-        elseif test_answer == 'D'|'D.'|'d'|'d.'
+        elseif opts == 'D'
             rockyroad_score= rockyroad_score+1;
         end
      end 
      if i == 7
-        if test_answer == 'A'|'A.'|'a'|'a.'
+        if opts == 'A'
             pralines_score = pralines_score +1;
-        elseif test_answer == 'B'|'B.'|'b'|'b.'
+        elseif opts == 'B'
             cccd_score = cccd_score +1;
-        elseif test_answer == 'C'|'C.'|'c'|'c.'
+        elseif opts == 'C'
             rockyroad_score = rockyroad_score +1;
         end
      end 
      if i == 8
-        if test_answer == 'A'|'A.'|'a'|'a.'
+        if opts == 'A'
             chocolatechip_score = chocolatechip_score +1;
-        elseif test_answer == 'B'|'B.'|'b'|'b.'
+        elseif opts == 'B'
             pralines_score = pralines_score +1;
-        elseif test_answer == 'C'|'C.'|'c'|'c.'
+        elseif opts == 'C'
             rainbowsherbet_score = rainbowsherbet_score +1;
         end
      end 
 end
+
 
 %Written by Jack Holmes and proofed by Maria Iorini and Melissa Aldana
 %Estimated time to complete was 15 hours
