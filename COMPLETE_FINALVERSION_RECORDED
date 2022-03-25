@@ -356,7 +356,7 @@ end
 %5 hours to proofread and integrate with other code
 
 msg= "Choose the closest landmark to you ";
-opts=["Nelson Fitness Center" "The Ratty" "The Sci-li" "The Rock Library" "Andrews Dining Hall"];
+opts=["Nelson Fitness Center" "The Ratty" "The Sci-Li" "The Rock Library" "Andrews Dining Hall"];
 choice=menu(msg,opts);
 disp("You chose" + opts(choice))
 
