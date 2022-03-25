@@ -265,8 +265,8 @@ if length_win > 1
             output_img = 10;
         end
     
-%If the vector 'winners' does not have a length greater than 1, then 'output' and 'outout_img' are defined based on the 'winners' vector value.    
-    
+%If the vector 'winners' does not have a length greater than 1, then 'output' and 'outout_img' are defined based on the 'winners' vector element value.    
+%The 'winners' vector element value is evaluated by elseif statements. 
 elseif winners == 1
     output = 'Strawberry!!!';
     output_img = 1;
