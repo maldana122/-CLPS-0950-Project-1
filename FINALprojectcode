@@ -279,8 +279,12 @@ elseif winners == 10
 end
 
 
-disp('Based on our quiz, the icecream flavor that best matches your personality is:');
-disp(output);
+
+text1 = 'Based on our quiz, the icecream flavor that best matches your personality is:'
+message = strcat(text1, output);
+displaymessage = msgbox(message)
+
+
 if output_img == 1
     imagesc(img_strawberry)
     axis image;
