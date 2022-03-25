@@ -214,34 +214,34 @@ if length_win > 1
     opts_tie = opts(winners)
     choice=menu(msg,opts_tie);
     answer_tie = opts_tie(choice)    
-        if answer_tie == A
+        if answer_tie == "A"
             output = 'Strawberry!!!';
             output_img = 1;
-        elseif answer_tie == B
+        elseif answer_tie == "B"
             output = 'Chocolate!!!';
             output_img = 2;
-        elseif answer_tie == C
+        elseif answer_tie == "C"
             output = 'Vanilla!!!';
             output_img = 3;
-        elseif answer_tie == D
+        elseif answer_tie == "D"
             output = 'Chocolate Chip Cookie Dough!!!';
             output_img = 4;
-        elseif answer_tie == E
+        elseif answer_tie == "E"
             output = 'Mint Chocolate Chip!!!';
             output_img = 5;
-        elseif answer_tie == F
+        elseif answer_tie == "F"
             output = 'Jamoca!!!';
             output_img = 6;
-        elseif answer_tie == G
+        elseif answer_tie == "G"
             output = 'Rocky Road!!!';
             output_img = 7;
-        elseif answer_tie == H
+        elseif answer_tie == "H"
             output = 'Chocolate Chip!!!';
             output_img = 8;
-        elseif answer_tie == I
+        elseif answer_tie == "I"
             output = 'Rainbow Sherbet!!!';
             output_img = 9;
-        elseif answer_tie == J
+        elseif answer_tie == "J"
             output = 'Pralines n Cream!!!';
             output_img = 10;
         end
