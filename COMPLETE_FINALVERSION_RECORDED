@@ -167,6 +167,8 @@ end
 %Estimated time to debug was 5 hours
 %5 hours to proofread and integrate with other code
 
+%The following code loads in images for each flavor that can then be called on later. 
+
 url_strawberry = 'https://www.thespruceeats.com/thmb/ohA1g_dWi_Wxn7IqU-oHGsKqpS8=/3000x1687/smart/filters:no_upscale()/strawberry-ice-cream-10-0b3e120e7d6f4df1be3c57c17699eb2c.jpg';
 img_strawberry = webread(url_strawberry);
 
