@@ -202,7 +202,7 @@ if length_win > 1
     I=9;
     J=10;
     
-    tie_break = ["A. Offending someone","B. Becoming boring","C. Having your instincts be wrong","D. Losing","E. Getting caught outside of your comfort zone","F.Being morally wrong","G. Your friends disliking you","H. Feeling incomptetent","I. Realizing you were wrong to trust someone","J. Emberassing yourselfin front of others"];
+    tie_break = ["A. Offending someone","B. Becoming boring","C. Having your instincts be wrong","D. Losing","E. Getting caught outside of your comfort zone","F.Being morally wrong","G. Your friends disliking you","H. Feeling incomptetent","I. Realizing you were wrong to trust someone","J. Embarassing yourself in front of others"];
   
     temp = 'Tiebreaker Question: What is your greatest fear? \n';
     answ = tie_break(winners);
