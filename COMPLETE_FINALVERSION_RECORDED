@@ -199,12 +199,16 @@ img_rainbowsherbet = webread(url_rainbowsherbet);
 url_pralines = 'https://www.killingthyme.net/wp-content/uploads/2015/03/pralines-and-cream-ice-cream1.jpg';
 img_pralines = webread(url_pralines);
 
-  
+
+%At this poing it is necesaary to see if the scores for any number of flavors are tied. 
+%This is done by putting the scores of each flavor in a vector 'allVals' and pulling out the max values from 'allvalls' to put into another vector 'winners'.
+   
 allVals = [strawberry_score; chocolate_score; vanilla_score; cccd_score; mintcc_score; jamoca_score; rockyroad_score; chocolatechip_score; rainbowsherbet_score; pralines_score];
 maxVal = max(allVals);
 winners = find(allVals == maxVal);
 length_win = length(winners);
 
+%If the length of the 'winners' vector is greater than 1, this means two or more flavors are tied and we need to enter the tiebreaker question.
 
 if length_win > 1
     A=1;
@@ -218,12 +222,20 @@ if length_win > 1
     I=9;
     J=10;
     
+    %The tiebreaker question has options for each flavor.
+    
     tie_break = ["A. Offending someone","B. Becoming boring","C. Having your instincts be wrong","D. Losing","E. Getting caught outside of your comfort zone","F.Being morally wrong","G. Your friends disliking you","H. Feeling incomptetent","I. Realizing you were wrong to trust someone","J. Emberassing yourselfin front of others"];
+  
+    %Following Code sets up the tiebreaker question.
   
     temp = "Tiebreaker Question: What is your greatest fear? \";
     answ = tie_break(winners);
     %q_and_a = % strcat(temp, answ);
 
+    %Code will display the tiebreaker question and only the options associated with the flavors that are tied.
+    %This is done in a separate window using the menu function.
+    %Depending on the answer to the tiebreaker question, the variable 'output' is assigned a flavor in the form of a string and 'output_img' is defined in order to display the proper image.
+    %This is done using if statements to evaluate the answer to the tiebreaker
 
     msg= sprintf(temp);
     opts=["A. Offending someone" "B. Becoming boring" "C. Having your instincts be wrong" "D. Losing" "E. Getting caught outside of your comfort zone" "F.Being morally wrong" "G. Your friends disliking you" "H. Feeling incomptetent" "I. Realizing you were wrong to trust someone" "J. Emberassing yourselfin front of others" ];
@@ -261,7 +273,9 @@ if length_win > 1
             output = 'Pralines n Cream!!!';
             output_img = 10;
         end
-        
+    
+%If the vector 'winners' does not have a length greater than 1, then 'output' and 'outout_img' are defined based on the 'winners' vector value.    
+    
 elseif winners == 1
     output = 'Strawberry!!!';
     output_img = 1;
@@ -294,12 +308,13 @@ elseif winners == 10
     output_img = 10;
 end
 
-
+%The following lines of code then display a text box telling you your flavor as determined by the variable 'output'.
 
 text1 = 'Based on our quiz, the icecream flavor that best matches your personality is:'
 message = strcat(text1, output);
 displaymessage = msgbox(message)
 
+%The following if statements will then diaply the corresponding image based on the variavle 'output_img'.
 
 if output_img == 1
     imagesc(img_strawberry)
