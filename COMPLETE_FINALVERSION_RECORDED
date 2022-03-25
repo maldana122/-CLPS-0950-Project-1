@@ -355,12 +355,15 @@ end
 %Estimated time to debug was 5 hours
 %5 hours to proofread and integrate with other code
 
+
+%This is the pop-up menu code that allows the user to select the closest landmark to them, without this, the user would need to type the location into the 
+%command window
 msg= "Choose the closest landmark to you ";
 opts=["Nelson Fitness Center" "The Ratty" "The Sci-Li" "The Rock Library" "Andrews Dining Hall"];
 choice=menu(msg,opts);
-disp("You chose" + opts(choice))
+disp("You chose" + opts(choice)) %here the message integrates whatever the use chose as an answer choice and then associates it with a set of coordinates
 
-%Landmarks
+%Landmarks' coordinates are stored with the respective text variable
 %Nelson
 location_choices = containers.Map;
 location_choices('Nelson Fitness Center') = [41.83,-71.3980];
@@ -369,6 +372,7 @@ location_choices('The Sci-Li')= [41.82720, -71.4002];
 location_choices('The Rock Library')= [41.8257, -71.4051];
 location_choices('Andrews Dining Hall')= [41.8306, -71.4024];
 
+%this makes the selected landmark's coordinates be a stored variable that is then used in the map display
 temp=location_choices(opts(choice));
 latchoice=temp(1) 
 lonchoice=temp(2)
@@ -397,7 +401,7 @@ lonRock=-71.4051;
 latAndrews=41.8306;
 lonAndrews=-71.4024;
 
-
+%this is the same logic as lines 361-364 with the difference that we are storing ice-cream flavor information and not landmark
 msg= "Select the Ice Cream flavor that was assigned to you in the previous part ";
 opts=["Strawberry Ice Cream" "Chocolate Ice Cream" "Vanilla Ice Cream" "Mint Chocolate Chip" "Chocolate Chip Cookie Dough" "Rocky Road" "Jamoca" "Chocolate Chip" "Pralines" "Rainbow Sherbert"];
 choice=menu(msg,opts);
@@ -465,12 +469,12 @@ lonSacred=-71.37914;
 
 
 %map display
-h1=geoplot([latchoice latend], [lonchoice lonend], '-p');
-set(h1,'color','m');
+h1=geoplot([latchoice latend], [lonchoice lonend], '-p'); %here geoplot combines the selected latitude of the landmark of choice and of the ice-cream flavor's location and the longittude of the those variable as well
+set(h1,'color','m'); 
 %changing colors- https://www.mathworks.com/matlabcentral/answers/895167-how-can-i-change-the-line-colour-in-a-geoplot-based-on-data
 geolimits([41.7 41.9],[-71.425 -71.3291])
-geobasemap streets
-text(latchoice,lonchoice,'Start Here');
+geobasemap streets %this function ensure we see street level maps and not simple terrain 
+text(latchoice,lonchoice,'Start Here'); %the text adjustment provides the user with a start and end point rather than an ambigious line on the plot
 text(latend,lonend, 'End',...
     'HorizontalAlignment','right',...
     'VerticalAlignment','bottom');
