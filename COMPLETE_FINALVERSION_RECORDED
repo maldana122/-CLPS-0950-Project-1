@@ -305,7 +305,7 @@ text1 = 'Based on our quiz, the icecream flavor that best matches your personali
 message = strcat(text1, output);
 displaymessage = msgbox(message)
 
-%The following if statements will then diaply the corresponding image based on the variavle 'output_img'.
+%The following if statements will then diaply the corresponding image based on the variable 'output_img'.
 
 if output_img == 1
     imagesc(img_strawberry)
