@@ -46,8 +46,12 @@ questions('1')= ['Type the answer choice as a single capital letter 1. Which mov
     'B. You are helping the others remain calm and showing your support \n' ...
     'C. Youve picked a direction and are going for it, theres no going back now \n'];
 
+%this stores the end of the loop so that the questions can be presented from 1 to 8th
  N=8; %for while loop so that the questions are shown from 1st to last
 %varibales to add the scores for each question
+%these variables change scores based on the answers the quiz taker selects
+%these variables can then be compared and the one with the greatest value is the flavor the quiz taker is most suited to 
+
 strawberry_score=0;
 chocolate_score=0;
 vanilla_score=0;
@@ -59,6 +63,13 @@ chocolatechip_score=0;
 rainbowsherbet_score=0;
 pralines_score=0;
 prompt = 'Answer: ';
+
+%this loops the questions from 1 to the last question
+%we then presented the question in an output box with a menu of the options
+%the loop changes the scores of the variables 
+%for example for question 1, if the quiz taker chose A, then a point is added to strawberry as from our research the personality of option A is linked to those who like Strawberry
+%on the other hand if they chose B for question 1, then a point will be added to chocolate
+
 for i=1:N
     msg= sprintf(questions(string(i)));
     opts=["A" "B" "C" "D" ];
