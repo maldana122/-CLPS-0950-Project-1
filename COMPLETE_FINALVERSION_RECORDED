@@ -211,16 +211,7 @@ length_win = length(winners);
 %If the length of the 'winners' vector is greater than 1, this means two or more flavors are tied and we need to enter the tiebreaker question.
 
 if length_win > 1
-    A=1;
-    B=2;
-    C=3;
-    D=4;
-    E=5;
-    F=6;
-    G=7;
-    H=8;
-    I=9;
-    J=10;
+ 
     
     %The tiebreaker question has options for each flavor.
     
