@@ -1,3 +1,11 @@
+%we divided our work into three sections
+%the first section was coded by Maria Iorini and debugged by Melissa Aldana and Jack Holmes
+%the estimated time to code was around 15 hours, 5 hours for planning and research and 5 hours for debugging 
+%extra hours were added for TA hours and class time
+
+%in this first section we are storing question in containers.map so that we can retrieve parts of the question later
+%the questions tests to see which traits the quiz taker possesses and relates it to each flavor
+
 questions = containers.Map;
 questions('1')= ['Type the answer choice as a single capital letter 1. Which movie genre do you enjoy more? \n' ...
     'A.Science-fiction \n' ...
